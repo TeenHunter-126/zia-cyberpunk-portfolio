@@ -49,10 +49,10 @@ export const metadata: Metadata = {
     url: "https://ziaulhassan.vercel.app",
     images: [
       {
-        url: "/logo.svg",
+        url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "Zia Ul Hassan Logo",
+        alt: "Zia Ul Hassan — Mechatronics & Robotics Engineer",
       },
     ],
   },
@@ -62,6 +62,7 @@ export const metadata: Metadata = {
     description:
       "Cyberpunk portfolio showcasing robotics, automation, and AI engineering work.",
     site: "@ziaulhassan",
+    images: ["/og-image.svg"],
   },
   metadataBase: new URL("https://ziaulhassan.vercel.app"),
 };

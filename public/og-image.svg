@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#001219" />
+      <stop offset="1" stop-color="#0f1724" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="b" />
+      <feMerge>
+        <feMergeNode in="b" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <style>
+      .bg{fill:url(#g)}
+      .title{font-family: 'Orbitron', sans-serif; fill:#00f0ff; font-size:54px; font-weight:700}
+      .subtitle{font-family: 'Rajdhani', sans-serif; fill:#ff2a6d; font-size:24px}
+      .tag{font-family: 'Share Tech Mono', monospace; fill:#9ae6ff; font-size:18px}
+      .logo-shadow{filter:url(#glow)}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="630" />
+
+  <!-- Neon grid accent -->
+  <g opacity="0.12">
+    <rect x="40" y="400" width="1120" height="2" fill="#00f0ff" />
+    <rect x="40" y="420" width="1120" height="2" fill="#ff2a6d" />
+    <rect x="40" y="440" width="1120" height="2" fill="#b537f2" />
+  </g>
+
+  <!-- Logo mark (simple monogram ZH) -->
+  <g transform="translate(80,80) scale(3)">
+    <rect x="0" y="0" width="40" height="40" rx="8" fill="#05040a" stroke="#00f0ff" stroke-width="1" class="logo-shadow" />
+    <text x="20" y="28" text-anchor="middle" font-family="Orbitron, sans-serif" font-size="22" fill="#fff">Z</text>
+    <text x="30" y="28" text-anchor="middle" font-family="Orbitron, sans-serif" font-size="22" fill="#ff2a6d">H</text>
+  </g>
+
+  <!-- Main text -->
+  <text x="420" y="240" class="title">ZIA UL HASSAN</text>
+  <text x="420" y="300" class="subtitle">Mechatronics & Robotics Engineer</text>
+  <text x="420" y="340" class="tag">Robotics • Embedded Systems • Industrial Automation • ML</text>
+
+  <!-- Subtle code-like lines -->
+  <g opacity="0.08" fill="#00f0ff">
+    <rect x="420" y="360" width="560" height="6" />
+    <rect x="420" y="380" width="420" height="4" />
+  </g>
+
+  <!-- small watermark URL -->
+  <text x="420" y="580" class="tag">ziaulhassan.vercel.app</text>
+</svg>
